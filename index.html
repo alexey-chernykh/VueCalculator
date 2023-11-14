@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueCalculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="calc-body">
+            <input class="calc-input" type="text" v-bind:value="result" placeholder="RESULT" readonly>
+            <input class="calc-input" type="text" v-bind:value="text" placeholder="EQUATION" readonly>
+            <div class="calc-btns">
+                <button class="btn special" id="btnSmile" @click="btnSmileClick">😁</button>
+                <button class="btn special" id="btnHeart" @click="btnHeartClick">❤️</button>
+                <button class="btn" id="btnC" @click="btnOtherClick">C</button>
+                <button class="btn" id="btnCE" @click="btnOtherClick">CE</button>
+                <button class="btn" id="btn7" @click="btnDigitClick">7</button>
+                <button class="btn" id="btn8" @click="btnDigitClick">8</button>
+                <button class="btn" id="btn9" @click="btnDigitClick">9</button>
+                <button class="btn" id="btnplus" @click="btnOpClick">+</button>
+                <button class="btn" id="btn4" @click="btnDigitClick">4</button>
+                <button class="btn" id="btn5" @click="btnDigitClick">5</button>
+                <button class="btn" id="btn6" @click="btnDigitClick">6</button>
+                <button class="btn" id="btnminus" @click="btnOpClick">-</button>
+                <button class="btn" id="btn1" @click="btnDigitClick">1</button>
+                <button class="btn" id="btn2" @click="btnDigitClick">2</button>
+                <button class="btn" id="btn3" @click="btnDigitClick">3</button>
+                <button class="btn" id="btnmult" @click="btnOpClick">*</button>
+                <button class="btn" id="btnfloat" @click="btnOtherClick">.</button>
+                <button class="btn" id="btn0" @click="btnDigitClick">0</button>
+                <button class="btn" id="btneq" @click="btnOtherClick">=</button>
+                <button class="btn" id="btndiv" @click="btnOpClick">/</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
